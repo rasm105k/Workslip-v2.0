@@ -1,4 +1,4 @@
-# ADR 0018 — Azure Monitor is the telemetry boundary
+# ADR 0020 — Azure Monitor is the telemetry boundary
 
 **Status:** Accepted
 

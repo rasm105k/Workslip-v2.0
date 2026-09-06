@@ -193,7 +193,7 @@ resource logAnalyticsWorkspace 'Microsoft.OperationalInsights/workspaces@2023-09
     sku: {
       name: 'PerGB2018'
     }
-    // This workspace is the telemetry boundary (ADR 0018): the platform reads
+    // This workspace is the telemetry boundary (ADR 0020): the platform reads
     // Workslip's telemetry here rather than receiving a delivery. A reached
     // daily cap stops ingestion until the next day and the gap cannot be
     // backfilled, so the cap has to leave room for the full signal — but not

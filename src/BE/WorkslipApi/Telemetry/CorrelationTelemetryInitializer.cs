@@ -25,7 +25,7 @@ public sealed class CorrelationTelemetryInitializer(IHttpContextAccessor httpCon
             telemetry.Context.GlobalProperties["CorrelationId"] = correlationId;
 
         // Telemetry is read out of Azure Monitor by the platform rather than
-        // delivered to it (ADR 0018), so the dimension a consumer needs to answer
+        // delivered to it (ADR 0020), so the dimension a consumer needs to answer
         // "which customer is affected" has to be present at emission. This is the
         // organization, deliberately not the user: it identifies a tenant rather
         // than a person, so it does not turn every trace into personal data.
